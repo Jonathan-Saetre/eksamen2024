@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handlekurv</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+  <nav class="nav-container">
+
+    <form class="search-bar">
+      <input type="text" placeholder="søk her">
+      <button type="submit">🔍</button>
+    </form>
+
+
+    <ul class="nav-links">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="index.html#popular-products">Produkter</a></li>
+      <li><a href="index.html">Logo</a></li>
+      <li><a href="index.html#popular-categories">Kategorier</a></li>
+      <li><a href="#footer">Kontakt oss</a></li>
+    </ul>
+
+
+    <section class="nav-icons">
+      <a href="#"><img src="img/person.png" alt="personal profile"></a>
+      <a href="#"><img src="img/heart.png" alt="heart"></a>
+      <a href="handlekurv.html"><img src="img/shopping-cart-icon.png" alt="shopping cart"></a>
+    </section>
+  </nav>
+
+  <main>
+
+        <!-- Products in the shopping cart -->
+    <section class="shopping-bag">
+      <h2>1. SHOPPINGBAGEN DIN</h2>
+      
+
+      <a href="produkt.html" class="product-link">
+        <article class="product">
+          <img src="img/placeholder.jpeg" alt="Dress">
+          <section class="product-details">
+            <h3>PRODUCT NAME</h3>
+            <p>Størrelse: M</p>
+            <p>Farge: beige</p>
+          </section>
+        </article>
+      </a>
+      
+
+      <a href="produkt.html" class="product-link">
+        <article class="product">
+          <img src="img/placeholder.jpeg" alt="Dress">
+          <section class="product-details">
+            <h3>PRODUCT NAME</h3>
+            <p>Størrelse: M</p>
+            <p>Farge: beige</p>
+          </section>
+        </article>
+      </a>
+      
+
+      <a href="produkt.html" class="product-link">
+        <article class="product">
+          <img src="img/placeholder.jpeg" alt="Dress">
+          <section class="product-details">
+            <h3>PRODUCT NAME</h3>
+            <p>Størrelse: M</p>
+            <p>Farge: beige</p>
+          </section>
+        </article>
+      </a>
+      
+    </section>
+    
+
+
+    <section class="personal-info">
+      <h2>2. DINE OPPLYSNINGER</h2>
+      <form>
+        <fieldset>
+          <legend>Personlige opplysninger</legend>
+          <label for="firstname">Fornavn</label>
+          <input type="text" id="firstname" name="firstname" required>
+
+          <label for="lastname">Etternavn</label>
+          <input type="text" id="lastname" name="lastname" required>
+
+          <label for="address">Gateadresse</label>
+          <input type="text" id="address" name="address" required>
+
+          <label for="postalcode">Postnummer</label>
+          <input type="text" id="postalcode" name="postalcode" required>
+
+          <label for="city">Poststed</label>
+          <input type="text" id="city" name="city" required>
+
+          <section class="form-actions">
+            <button type="submit">Lagre</button>
+            <button type="reset">Avbryt</button>
+          </section>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Delivery information -->
+    <section class="delivery">
+      <h2>3. LEVERING</h2>
+      <label for="express">
+        <input type="radio" id="express" name="delivery" value="express">
+        Express hjemlevering
+      </label>
+
+      <label for="standard">
+        <input type="radio" id="standard" name="delivery" value="standard">
+        Standard hjemlevering
+      </label>
+
+      <label for="utleveringssted">
+        <input type="radio" id="utleveringssted" name="delivery" value="utleveringssted">
+        Express pakke til utleveringssted
+      </label>
+    </section>
+
+    <!-- Payment information -->
+    <section class="payment">
+      <h2>4. BETALING</h2>
+
+      <fieldset>
+        <legend>Velg betalingsmetode</legend>
+        <label for="payment">Betalingsmetode</label>
+        <select id="payment" name="payment" required>
+          <option value="">none</option>
+          <option value="creditcard">Kredittkort</option>
+          <option value="paypal">PayPal</option>
+          <option value="vipps">Vipps</option>
+        </select>
+      </fieldset>
+
+      <!-- Card Details  -->
+      <fieldset>
+        <legend>Betal med Kort</legend>
+
+        <label for="card-number">Kortnummer</label>
+        <input type="text" id="card-number" placeholder="342342****4435" >
+
+        <label for="expiry-date">Utløpsdato</label>
+        <input type="date" id="expiry-date" >
+
+        <label for="cvc">CVC/CVV</label>
+        <input type="password" id="cvc" placeholder="CVC/CVV">
+
+        <p>Å betale inkl. mva.<br>1 199 kr</p>
+
+        <button class="button" type="submit">Fullfør kjøp</button>
+      </fieldset>
+
+      <!-- Terms & Conditions -->
+      <section class="terms">
+        <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</p>
+      </section>
+
+      <section class="checkbox-group">
+        <label><input type="checkbox"> Ja takk! Send nyhetsbrev til meg.</label><br>
+        <label><input type="checkbox"> Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
+      </section>
+    </section>
+
+  </main> 
+
+
+  <footer id="footer">
+    <section class="footer-logo">
+      <a href="index.html" aria-label="Home">
+        <h1>Logo</h1>
+      </a>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+    </section>
+    
+      <section class="contact-info">
+        <h2>KONTAKT</h2>
+        <p><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+        <p><strong>Telefon:</strong> 69 60 80 00</p>
+        <p><strong>E-post:</strong> halden@hiof.no</p>
+        <p><strong>Åpningstider:</strong> Stenger 15:00</p>
+      </section>
+    
+      <section class="shortcuts">
+        <h2>SNARVEIER</h2>
+        <p><a href="tilgjengelighetserklæring.pdf">Tilgjengelighetserklæring</a></p>
+        <p><a href="index.html#popular-products">Produkter</a></p>
+        <p><a href="index.html#popular-categories">Kategorier</a></p>
+        <p><a href="#footer">Kontakt oss</a></p>
+      </section>
+    
+      <section class="social-media">
+        <h2>SOSIALE MEDIER</h2>
+        <a href="https://www.instagram.com/"><img src="img/instagram-icon.png" alt="bilde av instagram logoen som leder til hjemmesiden"></a>
+        <a href="https://www.facebook.com/"><img src="img/facebook-icon.png" alt="bilde av facebook logoen som leder til hjemmesiden"></a>
+        <a href="https://www.linkedin.com/"><img src="img/linkedin-icon.png" alt="bilde av linkedin logoen som leder til hjemmesiden"></a>
+        <a href="https://no.pinterest.com/"><img src="img/pinterest-icon.png" alt="bilde av pinterest logoen som leder til hjemmesiden"></a>
+      </section>
+    </footer>
+  
+  </body>
+  </html>
